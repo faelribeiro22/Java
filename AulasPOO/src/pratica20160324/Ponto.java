@@ -13,7 +13,7 @@ public class Ponto {
     
     public void setY(float y1){
         if(!this.ehNegativo(y1))
-            y1 = y;
+            y = y1;
     }
     
     public float getX(){
@@ -43,7 +43,8 @@ public class Ponto {
         
         float res1 = (float)Math.pow(ponto.getX() - getX(),2);
         float res2 = (float)Math.pow(ponto.getY() - getY(), 2);
-        return (float)Math.sqrt(res1+res2);
+        //return (float)Math.sqrt(res1+res2);
+        return (float)Math.sqrt(Math.pow((ponto.getX() - getX()),2) + Math.pow(ponto.getY() - getY(),2));
         //return (float)Math.sqrt(Math.pow((ponto1.getX() - ponto2.getX()),2) + Math.pow(ponto1.getY() - ponto2.getY(),2));
     } 
     

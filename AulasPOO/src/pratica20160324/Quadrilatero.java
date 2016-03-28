@@ -13,7 +13,7 @@ public class Quadrilatero {
     
     public void cadastrarVertice(Ponto a1, Ponto b1, Ponto c1, Ponto d1){
         
-        if(this.verificaVertice(a1, b1) && this.verificaVertice(b1, c1) && this.verificaVertice(c1, d1) && this.verificaVertice(d1, a1)){
+       if(this.verificaVertice(a1, b1) && this.verificaVertice(b1, c1) && this.verificaVertice(c1, d1) && this.verificaVertice(d1, a1)){
             a = a1;
             b = b1;
             c = c1;
@@ -28,4 +28,6 @@ public class Quadrilatero {
     public boolean verificaVertice(Ponto a, Ponto b){
         return ((a.getX() == b.getX() && a.getY() != a.getY()) || (a.getX() != b.getX() && a.getY() == b.getY()));
     }
+    
+    
 }
